@@ -1,0 +1,16 @@
+import numpy as np
+
+# array = np.loadtxt('data2.txt, skiprows=1')
+array = np.loadtxt('data2.txt') # txt导入到list里，list名字为array
+
+print('original data is: \n')# 打印原始数据
+print(array)
+print('\n')
+
+array[1][2] = 0 # 修改位置为第一行第二列的数据
+
+print('new data is: \n') # 打印修改后的数据
+print(array)
+print('\n')
+
+# usefull tutorial for more action with txt: https://penandpants.com/2012/03/09/reading-text-tables-with-python/
